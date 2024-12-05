@@ -8,7 +8,7 @@ st.sidebar.title('Modelo de predicción NOCobro en Deep Learning')
 # Cargar el modelo
 @st.cache_resource()
 def load_model():
-    return keras.models.load_model('../models/modelo.keras')
+    return keras.models.load_model('modelo.keras')
 
 def cargar_archivo():
     archivo = st.file_uploader('Cargar archivo CSV', type='csv')
